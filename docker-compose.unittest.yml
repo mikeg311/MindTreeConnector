@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  test:
+    image: gradle:7.6.0-jdk11
+    working_dir: /app
+    volumes:
+      - .:/app
+      - gradle_cache:/home/gradle/.gradle
+    environment:
+      - SPRING_PROFILES_ACTIVE=unittest
+    command: ["./gradlew", "--no-daemon", "--build-cache", "check"]
+
+volumes:
+  gradle_cache:

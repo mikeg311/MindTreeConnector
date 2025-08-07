@@ -1,0 +1,8 @@
+pluginManagement {
+    repositories {
+        maven {
+            url "$artifactory_contexturl/$artifactory_repo"
+        }
+    }
+}
+rootProject.name = 'mjg-cp-mindtree-connector'

@@ -1,0 +1,5 @@
+<FindBugsFilter>
+    <Match>
+            <Bug pattern="SPRING_CSRF_PROTECTION_DISABLED"/>
+    </Match>
+</FindBugsFilter>
