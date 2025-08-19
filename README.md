@@ -4,7 +4,7 @@ This project is a **demonstration Kotlin Spring Boot microservice** designed to 
 
 ## Overview
 
-The service simulates interaction with a **fictional major payment processor**, exposing RESTful endpoints for payment-related operations. While the processor is mocked for demonstration purposes, the structure and logic reflect real-world enterprise service design.
+The service simulates interaction with a **fictional major online digital wallet and payment processor**, exposing RESTful endpoints for payment-related operations. While the processor is mocked for demonstration purposes, the structure and logic reflect real-world enterprise service design.
 
 ## Features
 

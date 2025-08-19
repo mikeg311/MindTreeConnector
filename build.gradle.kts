@@ -16,7 +16,7 @@ plugins {
     id("org.jetbrains.kotlin.kapt") version "1.6.21"
 }
 
-group = "com.bsb.cp.connector.mindtree"
+group = "com.mjg.cp.connector.mindtree"
 description = "MindTree Connector Service - public interface"
 
 java.sourceCompatibility = JavaVersion.VERSION_11
@@ -33,11 +33,8 @@ configurations {
 }
 
 repositories {
-    maven { url = uri("https://artifactory.company.com/artifactory/bsb-repo/") }
-    maven { url = uri("https://artifactory.company.com/artifactory/credit-services-repository") }
+    gradlePluginPortal()
     mavenCentral()
-    maven { url = uri("https://repo.spring.io/snapshot") }
-    maven { url = uri("https://repo.spring.io/milestone") }
 }
 
 extra["springCloudVersion"] = "2021.0.3"
@@ -92,7 +89,7 @@ dependencies {
 
     // DynaTrace
 
-    implementation("com.bsb.common:company-dynatrace-metrics-starter:0.0.5")
+    implementation("com.mjg.common:company-dynatrace-metrics-starter:0.0.5")
     implementation("com.ryantenney.metrics:metrics-spring:3.1.3")
 
     // Testing

@@ -1,8 +1,13 @@
 pluginManagement {
     repositories {
-        maven {
-            url "$artifactory_contexturl/$artifactory_repo"
-        }
+        gradlePluginPortal()  // Where Spring Boot plugin lives
+        mavenCentral()        // Optional fallback
+    }
+}
+
+dependencyResolutionManagement {
+    repositories {
+        mavenCentral()        // All dependencies come from Maven Central
     }
 }
 rootProject.name = 'mjg-cp-mindtree-connector'

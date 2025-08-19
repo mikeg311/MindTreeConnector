@@ -1,1 +1,0 @@
-package com.bsb.cp.connector.mindtree.configimport org.springframework.boot.context.properties.ConfigurationPropertiesimport org.springframework.context.annotation.Configuration@ConfigurationProperties(prefix = "app")@Configurationclass ServiceProperties(    var environment: String = "")
